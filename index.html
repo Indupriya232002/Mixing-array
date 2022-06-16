@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+    var array1 = ["h", "a", "c"],
+    array2 = [7, 4,17,10 ,48],
+    result = [],
+    i, l = Math.min(array1.length, array2.length);
+    
+for (i = 0; i < l; i++) {
+    result.push(array1[i], array2[i]);
+}
+result.push(...array1.slice(l), ...array2.slice(l));
+
+console.log(result);
+</script>
+    
+</body>
+</html>
